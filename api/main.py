@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import NearestNeighbors
-import setuptools
+
 
 # read data from CSV file
 df = pd.read_csv('Merged file.csv')
@@ -77,4 +77,3 @@ def get_similar_songs_hybrid(song_name):
 
 if __name__ == '__main__':
     app.run(debug=True)
-    setuptools.setup()
